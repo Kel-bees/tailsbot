@@ -23,7 +23,7 @@ client.events = new Discord.Collection();
 
 client.on('ready', () =>{
     console.log('Linea');
-    client.user.setActivity('Prefijo: GT!', { type: "WATCHING" }).catch(console.error)
+    client.user.setActivity('Prefijo: %', { type: "WATCHING" }).catch(console.error)
 });
 
 
