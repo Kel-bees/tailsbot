@@ -55,7 +55,7 @@ module.exports = (Discord, client, message) => {
           }
         }
         if (invalidPerms.length){
-          return message.channel.send(`Looks like you dont have these permisions: \`${invalidPerms}\``)
+          return message.channel.send(`Parece que no tienes estos permisos: \`${invalidPerms}\``)
         }
     }
     if(command) command.execute(client, message, cmd, args, Discord);
