@@ -4,14 +4,14 @@ module.exports = {
     aliases: ['suggestion', 'suggetions'],
     permissions: [],
     execute(client, message, cmd, args, Discord){
-        const channel = message.guild.channels.cache.find(c => c.name === '╚»『✨』sugerencias');
-        if(!channel) return message.channel.send('El canal de Sugerencias no existe!');
+        const channel = message.guild.channels.cache.find(c => c.name === '📇preguntas📇');
+        if(!channel) return message.channel.send('El canal de preguntas no existe!');
 
         let messageArgs = args.join(' ');
         const embed = new Discord.MessageEmbed()
-        .setColor('#7FBF7F')
+        .setColor('#F9F99A')
         .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true}))
-        .setTitle('Sugiere:')
+        .setTitle('Pregunta:')
         .setDescription(messageArgs)
         .setFooter('Bot creado por Bumblebee Kev#4596');
 
