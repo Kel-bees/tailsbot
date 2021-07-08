@@ -11,7 +11,7 @@ module.exports = {
 
         let ballembed = new Discord.MessageEmbed()
         .setAuthor(`🎱 ${message.author.username}`)
-        .setColor("#FDEAFF")
+        .setColor("#F9F99A")
         .addField("Pregunta", question)
         .addField("Respuesta", replies[result])
 
