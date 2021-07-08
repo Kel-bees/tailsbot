@@ -4,14 +4,16 @@ module.exports = {
     permissions: [],
     execute(client, message, cmd, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
-        .setColor('#FDEAFF')
+        .setColor('#F9F99A')
         .setTitle('Comandos de moderacion')
         .setDescription('Mod!')
         .addFields(
-            {name: 'GT!ban', value: 'BANEA!'},
-            {name: 'GT!kick', value: 'Kickea!'},
+            {name: '%ban', value: 'BANEA!'},
+            {name: '%kick', value: 'Kickea!'},
+            {name: '%mute', value: 'Mutea!'},
+            {name: '%unmute', value: 'Unmutea!'},
         )
-        .setImage('https://cdn.discordapp.com/avatars/854477639514587157/88427f9bee8b1b01234a05e7224fb9dd.webp?size=256')
+        .setImage('https://cdn.discordapp.com/avatars/853511511472734218/62383ce3b40480725f4f5a28ecab7483.webp?size=256')
         .setFooter('Bot creado por Bumblebee Kev#4596');
         
         message.channel.send(newEmbed)
